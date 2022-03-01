@@ -1,0 +1,12 @@
+[에러 정리]
+- c++ undefined reference to : .h파일과 .c파일을 활용해서 h에는 선언만해놓고,
+.c파일에 함수내용을 써놨을때, 에러발생. gcc에서는 .h를 먼저 읽어서 에러를 먼저 발생함.
+
+- no known conversion for argument from 'int' to '....'
+: .....타입을 int타입으로 해서 발생하는 에러.
+
+- error: expected constructor, destructor, or type conversion before ‘(’ token
+: std:: 를 선언 안할 때 발생했음.
+
+- unique_ptr<int> pA {new int{}}; 이런식으로 사용하고,
+  pA를 파라미터로 넘겨주기 위해서는 pA.get()을 써야한다.
